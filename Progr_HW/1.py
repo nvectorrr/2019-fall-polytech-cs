@@ -3,3 +3,4 @@ def main():
     x = (x * (x - 1)) / 2
     print('\nAnwer: ' + str(x))
 main()
+
