@@ -8,8 +8,8 @@ class Task_4_2_4
         LinkedList<Integer> num_2 = new LinkedList<Integer>();
         LinkedList<Integer> sum = new LinkedList<Integer>();
 
-        String num1 = "84567";
-        String num2 = "47548";
+        String num1 = "194937";
+        String num2 = "7893";
 
         num_1 = getIntList(num1);
         System.out.println(num_1.toString());
