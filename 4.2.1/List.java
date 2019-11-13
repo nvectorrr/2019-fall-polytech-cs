@@ -4,70 +4,70 @@ class List {
  
     void addFront(int data)           //добавить спереди
     {
-        ListElement a = new ListElement();  //создаём новый элемент
-        a.data = data;              //инициализируем данные. 
-                                    // указатель на следующий элемент автоматически инициализируется как null
-        if(head == null)            //если список пуст
-        {                           //то указываем ссылки начала и конца на новый элемент
-            head = a;               //т.е. список теперь состоит из одного элемента
+        ListElement a = new ListElement();  
+        a.data = data;              
+                                    
+        if(head == null)          
+        {                         
+            head = a;             
             tail = a;
         }
         else {
-            a.next = head;          //иначе новый элемент теперь ссылается на "бывший" первый
-            head = a;               //а указатель на первый элемент теперь ссылается на новый элемент 
+            a.next = head;          
+            head = a;               
         }
     }
  
     void addBack(int data) {          //добавление в конец списка
-        ListElement a = new ListElement();  //создаём новый элемент
+        ListElement a = new ListElement();  
         a.data = data;
-        if (tail == null)           //если список пуст
-        {                           //то указываем ссылки начала и конца на новый элемент
-            head = a;               //т.е. список теперь состоит из одного элемента
+        if (tail == null)           
+        {                           
+            head = a;               
             tail = a;
         } else {
-            tail.next = a;          //иначе "старый" последний элемент теперь ссылается на новый
-            tail = a;               //а в указатель на последний элемент записываем адрес нового элемента
+            tail.next = a;         
+            tail = a;              
         }
     }
  
     void printList()                //печать списка
     {
-        ListElement t = head;       //получаем ссылку на первый элемент   
-        while (t != null)           //пока элемент существуе
+        ListElement t = head;          
+        while (t != null)           
         {
-            System.out.print(t.data + " "); //печатаем его данные
-            t = t.next;                     //и переключаемся на следующий
+            System.out.print(t.data + " "); 
+            t = t.next;                    
         }
     }
  
     void delEl(int data)          //удаление элемента
     {
-        if(head == null)        //если список пуст - 
-            return;             //ничего не делаем
+        if(head == null)        
+            return;            
  
-        if (head == tail) {     //если список состоит из одного элемента
-            head = null;        //очищаем указатели начала и конца
+        if (head == tail) {    
+            head = null;        
             tail = null;
-            return;             //и выходим
+            return;           
         }
  
-        if (head.data == data) {    //если первый элемент - тот, что нам нужен
-            head = head.next;       //переключаем указатель начала на второй элемент
-            return;                 //и выходим
+        if (head.data == data) {  
+            head = head.next;      
+            return;                 
         }
  
-        ListElement t = head;       //иначе начинаем искать
-        while (t.next != null) {    //пока следующий элемент существует
-            if (t.next.data == data) {  //проверяем следующий элемент
-                if(tail == t.next)      //если он последний
+        ListElement t = head;       
+        while (t.next != null) {   
+            if (t.next.data == data) { 
+                if(tail == t.next)      
                 {
-                    tail = t;           //то переключаем указатель на последний элемент на текущий
+                    tail = t;          
                 }
-                t.next = t.next.next;   //найденный элемент выкидываем
-                return;                 //и выходим
+                t.next = t.next.next;   
+                return;                
             }
-            t = t.next;                //иначе ищем дальше
+            t = t.next;                
         }
     }
 }
