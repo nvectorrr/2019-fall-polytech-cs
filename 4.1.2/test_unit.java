@@ -5,7 +5,7 @@ class test_unit
         String s[] = new String[12];
         s[1] = "a";
         s[2] = "asddsa";
-        s[3] = "skdjf";
+        s[3] = "aaaasaa";
         s[4] = "asd dsa";
         s[5] = "asd sa";
         s[6] = "a s dd sa";
