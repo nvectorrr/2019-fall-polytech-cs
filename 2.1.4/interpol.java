@@ -1,11 +1,10 @@
 class interpol
 {
-    static int interpolationSearch( int x, int[] arr ) 
+    static int interpolationSearch( int[] arr, int x ) 
     { 
         // Find indexes of two corners 
         int lo = 0, hi = (arr.length - 1);
-        
-        long startTime = System.nanoTime();
+    
        
         // Since array is sorted, an element present 
         // in array must be in range defined by corner 
@@ -27,9 +26,6 @@ class interpol
             // Condition of target found 
             if (arr[pos] == x) 
             {
-                long stopTime = System.nanoTime();
-                long runtime = stopTime - startTime;
-                System.out.println("Linear time: " + runtime);
                 return pos;
             }
                 
@@ -42,10 +38,6 @@ class interpol
             else
                 hi = pos - 1; 
         } 
-
-        long stopTime = System.nanoTime();
-        long runtime = stopTime - startTime;
-        System.out.println("Linear time: " + runtime);
         return -1; 
     } 
 }
