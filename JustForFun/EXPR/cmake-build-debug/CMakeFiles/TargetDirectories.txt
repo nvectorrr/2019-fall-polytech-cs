@@ -1,0 +1,3 @@
+D:/Proga/T32EXPR/cmake-build-debug/CMakeFiles/T32EXPR.dir
+D:/Proga/T32EXPR/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Proga/T32EXPR/cmake-build-debug/CMakeFiles/rebuild_cache.dir
