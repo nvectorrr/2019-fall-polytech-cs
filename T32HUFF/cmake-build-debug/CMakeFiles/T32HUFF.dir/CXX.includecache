@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Progr/T32HUFF/HUFF.C
+stdio.h
+-
+string.h
+-
+huff.h
+C:/Progr/T32HUFF/HUFF.H
+
+C:/Progr/T32HUFF/HUFF.H
+crtdbg.h
+-
+stdlib.h
+-
+

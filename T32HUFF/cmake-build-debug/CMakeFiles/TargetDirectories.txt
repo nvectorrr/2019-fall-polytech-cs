@@ -1,0 +1,3 @@
+C:/Progr/T32HUFF/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Progr/T32HUFF/cmake-build-debug/CMakeFiles/T32HUFF.dir
+C:/Progr/T32HUFF/cmake-build-debug/CMakeFiles/edit_cache.dir
